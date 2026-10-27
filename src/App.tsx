@@ -18,13 +18,14 @@ import {
   restoreOpenAttempt,
   closeAttempt,
 } from "./game/storage";
+import { categories as categoryCatalog } from "./game/categories";
 import { createClock } from "./game/clock";
-const fallbackCategories: Category[] = [
-  { slug: "actors", label: "Actors" },
-  { slug: "world-leaders", label: "World leaders" },
-  { slug: "politicians", label: "Politicians" },
-  { slug: "ceos-founders", label: "CEOs / founders" },
-];
+const fallbackCategories: Category[] = categoryCatalog.map((category) => ({
+  ...category,
+  available: ["actors", "world-leaders", "ceos-founders"].includes(
+    category.slug,
+  ),
+}));
 export default function App() {
   const [category, setCategory] = useState("actors");
   const [categories, setCategories] = useState(fallbackCategories);
@@ -154,7 +155,14 @@ export default function App() {
           elapsed: createClock(current.current)(),
         }),
       );
-    if (current.current) setCategory(current.current.daily.category);
+    if (current.current)
+      setCategory(
+        categoryCatalog.some(
+          (category) => category.slug === current.current!.daily.category,
+        )
+          ? current.current.daily.category
+          : "actors",
+      );
     closeAttempt();
     current.current = null;
     setAttempt(null);

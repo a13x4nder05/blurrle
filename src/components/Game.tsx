@@ -12,6 +12,7 @@ import { hasUsedHint, type Action } from "../game/reducer";
 import { createClock } from "../game/clock";
 import { matchesRound, normalize } from "../game/answers";
 import { ROUND_MS, score } from "../game/scoring";
+import { categoryLabel } from "../game/categories";
 import { HintCard } from "./HintCard";
 const imageCache = new Map<string, Promise<void>>();
 function preload(url: string) {
@@ -214,14 +215,7 @@ export function Game({
           <span>blurr</span>le<span className="logo-period">.</span>
         </button>
         <span className="game-category">
-          {
-            {
-              actors: "Actors",
-              "world-leaders": "World leaders",
-              politicians: "Politicians",
-              "ceos-founders": "CEOs / founders",
-            }[attempt.daily.category]
-          }
+          {categoryLabel(attempt.daily.category)}
         </span>
         <span className="round-label">
           FACE <strong>{String(attempt.index + 1).padStart(2, "0")}</strong>

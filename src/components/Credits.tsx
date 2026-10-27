@@ -35,10 +35,12 @@ export function Credits({ onClose }: { onClose: () => void }) {
         </button>
       </header>
       <p>
-        Portraits courtesy of Wikimedia Commons and the credited photographers.
-        Images are resized and converted to WebP, cropped for display, and
-        temporarily blurred during play. Adapted images retain the source
-        license listed below.
+        Curated portraits come from Wikimedia Commons and the credited
+        photographers. Imported film-strip backgrounds link to their source
+        dataset; where individual image licensing is unavailable, the dataset’s
+        stated license is identified separately. Images are resized and
+        converted to WebP, cropped for display, and temporarily blurred during
+        play. Adapted images retain the source license listed below.
       </p>
       <p>
         Typography: DM Sans and Manrope, bundled locally under the SIL Open Font

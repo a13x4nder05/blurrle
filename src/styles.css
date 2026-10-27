@@ -70,6 +70,7 @@ a {
   pointer-events: none;
 }
 .film-backdrop::after {
+  z-index: 2;
   content: "";
   position: absolute;
   inset: 0;
@@ -85,16 +86,27 @@ a {
 .film-columns {
   position: absolute;
   z-index: 0;
-  inset: -40% -28%;
+  inset: -50% -40%;
   display: grid;
-  grid-template-columns: repeat(14, minmax(0, 1fr));
+  grid-template-columns: repeat(26, minmax(0, 1fr));
   gap: 0;
 }
 .film-column {
-  margin-inline: -12px;
+  margin-inline: -22px;
   margin-top: var(--stagger);
   transform: rotate(var(--tilt));
   transform-origin: 50% var(--origin);
+}
+.film-underlay {
+  inset: -50% -20%;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+.film-underlay .film-column {
+  margin-inline: -10px;
+  transform: none;
+}
+.film-front {
+  z-index: 1;
 }
 .film-track {
   animation: film-drift var(--duration) linear infinite;
@@ -975,11 +987,18 @@ kbd {
     padding: 25px 20px;
   }
   .film-columns {
-    inset: -40% -50%;
-    grid-template-columns: repeat(8, minmax(0, 1fr));
+    inset: -50% -65%;
+    grid-template-columns: repeat(16, minmax(0, 1fr));
     gap: 0;
   }
-  .film-column:nth-child(n + 9) {
+  .film-front .film-column:nth-child(n + 17) {
+    display: none;
+  }
+  .film-underlay {
+    inset: -50% -25%;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+  .film-underlay .film-column:nth-child(n + 9) {
     display: none;
   }
   .film-backdrop::after {

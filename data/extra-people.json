@@ -1,0 +1,17 @@
+[
+  {
+    "id": "454bfe7a29e1",
+    "name": "Aaron Paul",
+    "aliases": ["Paul", "Aron Paul"],
+    "categories": ["actors"],
+    "hint": "He played Jesse Pinkman in Breaking Bad.",
+    "imagePath": "454bfe7a29e1.webp",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Aaron_Paul_by_Gage_Skidmore.jpg",
+    "sourceAssetUrl": "https://upload.wikimedia.org/wikipedia/commons/1/10/Aaron_Paul_by_Gage_Skidmore.jpg",
+    "creator": "Gage Skidmore",
+    "licenseName": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "attribution": "Gage Skidmore",
+    "cropBottomFraction": 0.18
+  }
+]

@@ -9,7 +9,7 @@ Deliver a working prototype through implementation and verification. Resolve rou
 ## Product requirements
 
 - Keep the experience minimal: landing page, five-round game, and results page.
-- Put a simple category dropdown on the landing page: actors, world leaders, politicians, and CEOs / founders.
+- Put a simple category dropdown on the landing page: Actors, World leaders, CEOs & Founders, Musicians, Athletes, TV & Reality, and Other. Writers belong under Other. Remove Politicians from the picker while retaining historical data; disable new categories until five reviewed portraits are available.
 - Provide the same five images in the same order to every player for a given category and day.
 - Keep the category fixed throughout an attempt. Track daily recorded scores separately by category; replay results must not overwrite the first completed score.
 - End a round immediately for zero points when wrong-guess penalties and time decay exhaust its available score. Reveal the person and wait for Next.
@@ -32,7 +32,7 @@ Deliver a working prototype through implementation and verification. Resolve rou
 - Follow the forgiving name-matching policy in `SPEC.md`: normalized names and aliases, first names or surnames, and small spelling mistakes. Reject ambiguous matches within the pinned daily set. Document the policy.
 - Use one documented daily boundary, defaulting to UTC. Pin the category, date, and image order when an attempt starts so midnight cannot change an active game's questions.
 - Keep daily selection deterministic and persistent. Handle insufficient category content explicitly rather than silently producing different games for different players.
-- Use SQLite for people, image references, accepted answers, hints, category memberships, and daily selections. For the prototype, browser storage may hold player progress and recorded scores; document its browser/device limitations.
+- Supabase is the sole catalog and daily-game backend: metadata/daily selections in PostgreSQL, files in private Storage served through the backend, and a midnight UTC Cron job. Require server credentials and keep production independent of local databases and portrait files. Browser storage holds player progress and recorded scores; document its browser/device limitations.
 - Preserve recorded scores on replay. Save enough active-attempt state to handle refresh consistently; refreshing must not reset an active round's timer or penalties.
 
 ## Images and content

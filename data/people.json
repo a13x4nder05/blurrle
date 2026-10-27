@@ -2,12 +2,8 @@
   {
     "id": "1a161cbc4905",
     "name": "Bryan Cranston",
-    "aliases": [
-      "Cranston"
-    ],
-    "categories": [
-      "actors"
-    ],
+    "aliases": ["Cranston"],
+    "categories": ["actors"],
     "hint": "He played Walter White in Breaking Bad.",
     "imagePath": "1a161cbc4905.webp",
     "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:BryanCranston-byPhilipRomano_(cropped).jpg",
@@ -21,12 +17,8 @@
   {
     "id": "1b0c7c0c180a",
     "name": "Viola Davis",
-    "aliases": [
-      "Davis"
-    ],
-    "categories": [
-      "actors"
-    ],
+    "aliases": ["Davis"],
+    "categories": ["actors"],
     "hint": "She played Annalise Keating in How to Get Away with Murder.",
     "imagePath": "1b0c7c0c180a.webp",
     "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Viola_Davis_2026_(cropped).jpg",
@@ -40,13 +32,8 @@
   {
     "id": "c2f2124fdeab",
     "name": "Leonardo DiCaprio",
-    "aliases": [
-      "DiCaprio",
-      "Leo DiCaprio"
-    ],
-    "categories": [
-      "actors"
-    ],
+    "aliases": ["DiCaprio", "Leo DiCaprio"],
+    "categories": ["actors"],
     "hint": "He played Jack in Titanic and Cobb in Inception.",
     "imagePath": "c2f2124fdeab.webp",
     "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:LeoPTABFI191125-28_(cropped).jpg",
@@ -60,12 +47,8 @@
   {
     "id": "796d63d21697",
     "name": "Keanu Reeves",
-    "aliases": [
-      "Reeves"
-    ],
-    "categories": [
-      "actors"
-    ],
+    "aliases": ["Reeves"],
+    "categories": ["actors"],
     "hint": "He plays Neo in The Matrix and the title character in John Wick.",
     "imagePath": "796d63d21697.webp",
     "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Keanu_Reeves_at_TIFF_2025_02_(Cropped).jpg",
@@ -79,12 +62,8 @@
   {
     "id": "8ffb4f743177",
     "name": "Emma Watson",
-    "aliases": [
-      "Watson"
-    ],
-    "categories": [
-      "actors"
-    ],
+    "aliases": ["Watson"],
+    "categories": ["actors"],
     "hint": "She played Hermione Granger in the Harry Potter films.",
     "imagePath": "8ffb4f743177.webp",
     "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Emma_Watson_2013.jpg",
@@ -98,13 +77,8 @@
   {
     "id": "d8f758500c5d",
     "name": "Barack Obama",
-    "aliases": [
-      "Obama"
-    ],
-    "categories": [
-      "world-leaders",
-      "politicians"
-    ],
+    "aliases": ["Obama"],
+    "categories": ["world-leaders"],
     "hint": "The 44th president of the United States.",
     "imagePath": "d8f758500c5d.webp",
     "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:President_Barack_Obama.jpg",
@@ -118,13 +92,8 @@
   {
     "id": "6b655964fa53",
     "name": "Angela Merkel",
-    "aliases": [
-      "Merkel"
-    ],
-    "categories": [
-      "world-leaders",
-      "politicians"
-    ],
+    "aliases": ["Merkel"],
+    "categories": ["world-leaders"],
     "hint": "She served as German chancellor from 2005 to 2021.",
     "imagePath": "6b655964fa53.webp",
     "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Angela_Merkel_2019_cropped.jpg",
@@ -138,13 +107,8 @@
   {
     "id": "87e8d4d0b190",
     "name": "Nelson Mandela",
-    "aliases": [
-      "Mandela"
-    ],
-    "categories": [
-      "world-leaders",
-      "politicians"
-    ],
+    "aliases": ["Mandela"],
+    "categories": ["world-leaders"],
     "hint": "South Africa's first Black president and a leader against apartheid.",
     "imagePath": "87e8d4d0b190.webp",
     "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Nelson_Mandela_1994.jpg",
@@ -158,13 +122,8 @@
   {
     "id": "496ea770b1fb",
     "name": "Winston Churchill",
-    "aliases": [
-      "Churchill"
-    ],
-    "categories": [
-      "world-leaders",
-      "politicians"
-    ],
+    "aliases": ["Churchill"],
+    "categories": ["world-leaders"],
     "hint": "He led Britain as prime minister during much of World War II.",
     "imagePath": "496ea770b1fb.webp",
     "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Sir_Winston_Churchill_-_19086236948_(restored).jpg",
@@ -178,13 +137,8 @@
   {
     "id": "31006ea31c72",
     "name": "Jacinda Ardern",
-    "aliases": [
-      "Ardern"
-    ],
-    "categories": [
-      "world-leaders",
-      "politicians"
-    ],
+    "aliases": ["Ardern"],
+    "categories": ["world-leaders"],
     "hint": "She was New Zealand's prime minister from 2017 to 2023.",
     "imagePath": "31006ea31c72.webp",
     "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:New_Zealand_Prime_Minister_Jacinda_Ardern_in_2018.jpg",
@@ -198,13 +152,8 @@
   {
     "id": "d666ea35263e",
     "name": "Bill Gates",
-    "aliases": [
-      "Gates",
-      "William Gates"
-    ],
-    "categories": [
-      "ceos-founders"
-    ],
+    "aliases": ["Gates", "William Gates"],
+    "categories": ["ceos-founders"],
     "hint": "He co-founded Microsoft with Paul Allen.",
     "imagePath": "d666ea35263e.webp",
     "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Bill_Gates_at_the_European_Commission_-_P067383-987995_(cropped)_5.jpg",
@@ -218,13 +167,8 @@
   {
     "id": "5f74b84fefab",
     "name": "Steve Jobs",
-    "aliases": [
-      "Jobs",
-      "Steven Jobs"
-    ],
-    "categories": [
-      "ceos-founders"
-    ],
+    "aliases": ["Jobs", "Steven Jobs"],
+    "categories": ["ceos-founders"],
     "hint": "He co-founded Apple and introduced the iPhone.",
     "imagePath": "5f74b84fefab.webp",
     "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Steve_Jobs_Headshot_2010_(cropped_4).jpg",
@@ -238,13 +182,8 @@
   {
     "id": "4a651bf208fe",
     "name": "Oprah Winfrey",
-    "aliases": [
-      "Oprah",
-      "Winfrey"
-    ],
-    "categories": [
-      "ceos-founders"
-    ],
+    "aliases": ["Oprah", "Winfrey"],
+    "categories": ["ceos-founders"],
     "hint": "This talk-show host founded Harpo Productions and OWN.",
     "imagePath": "4a651bf208fe.webp",
     "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Oprah_Winfrey_2016.jpg",
@@ -258,13 +197,8 @@
   {
     "id": "9ae7a838f9f0",
     "name": "Jeff Bezos",
-    "aliases": [
-      "Bezos",
-      "Jeffrey Bezos"
-    ],
-    "categories": [
-      "ceos-founders"
-    ],
+    "aliases": ["Bezos", "Jeffrey Bezos"],
+    "categories": ["ceos-founders"],
     "hint": "He founded Amazon, originally an online bookstore.",
     "imagePath": "9ae7a838f9f0.webp",
     "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:260202-D-PM193-2205_SECWAR_Arsenal_of_Freedom_Tour_-_Florida_(3x4_cropped_on_Bezos_and_rotated).jpg",
@@ -278,12 +212,8 @@
   {
     "id": "a0dec2f1a2f4",
     "name": "Mark Zuckerberg",
-    "aliases": [
-      "Zuckerberg"
-    ],
-    "categories": [
-      "ceos-founders"
-    ],
+    "aliases": ["Zuckerberg"],
+    "categories": ["ceos-founders"],
     "hint": "He co-founded Facebook while studying at Harvard.",
     "imagePath": "a0dec2f1a2f4.webp",
     "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:P20260929DT-1655_(55561811540)_(cropped_2).jpg",

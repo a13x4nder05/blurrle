@@ -6,6 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": "http://127.0.0.1:3001",
+      "/backgrounds": "http://127.0.0.1:3001",
       "/portraits": "http://127.0.0.1:3001",
     },
   },

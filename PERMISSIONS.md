@@ -11,7 +11,7 @@ These permissions apply to this project and its development artifacts. They do n
 - Choose a suitable stack, architecture, dependencies, and development tools. Create the application and its package manifests, lockfiles, and configuration.
 - Download, install, update, and run dependencies needed for this project using project-local environments where possible. Use standard package managers and avoid unnecessary machine-wide changes.
 - Consult official documentation and public sources, make network requests needed for development, and download suitable image assets. Respect source terms and record image provenance and applicable license or attribution details.
-- Implement all specified screens, game rules, category selection, daily image selection, answer handling, score persistence, and SQLite storage.
+- Implement all specified screens, game rules, category selection, daily image selection, answer handling, score persistence, and Supabase storage.
 - Create and seed the development database. Run migrations and change its schema. Reset disposable test databases and generated sample data when needed; preserve existing user data.
 - Create example environment files and configure local services. Use credentials already supplied for this project only for their intended purpose; keep secrets out of source control, logs, and browser bundles.
 - Run formatters, linters, type checks, tests, builds, database tools, and browser-based verification. Install project testing tools if needed.

@@ -27,6 +27,8 @@ export function Landing({
   onRetry: () => void;
   onCredits: () => void;
 }) {
+  const available =
+    categories.find((item) => item.slug === category)?.available !== false;
   useEffect(() => {
     const startWithEnter = (event: KeyboardEvent) => {
       if (
@@ -54,11 +56,11 @@ export function Landing({
       )
         return;
       event.preventDefault();
-      if (!busy && (daily || pending)) onPlay();
+      if (!busy && available && (daily || pending)) onPlay();
     };
     window.addEventListener("keydown", startWithEnter);
     return () => window.removeEventListener("keydown", startWithEnter);
-  }, [busy, daily, pending, onPlay]);
+  }, [busy, available, daily, pending, onPlay]);
   return (
     <main className="landing">
       <FilmBackdrop />
@@ -76,8 +78,13 @@ export function Landing({
               onChange={(e) => onCategory(e.target.value)}
             >
               {categories.map((c) => (
-                <option key={c.slug} value={c.slug}>
+                <option
+                  key={c.slug}
+                  value={c.slug}
+                  disabled={c.available === false}
+                >
                   {c.label}
+                  {c.available === false ? " · Coming soon" : ""}
                 </option>
               ))}
             </select>
@@ -86,7 +93,7 @@ export function Landing({
             className="button primary play-button enter-action"
             aria-keyshortcuts="Enter"
             onClick={onPlay}
-            disabled={busy || (!daily && !pending)}
+            disabled={busy || !available || (!daily && !pending)}
           >
             {busy
               ? "Loading…"

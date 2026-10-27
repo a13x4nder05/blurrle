@@ -1,15 +1,18 @@
 import { z } from "zod";
+import { categorySlugs } from "./categories.js";
 import { ROUND_MS } from "./scoring.js";
 export const roundSchema = z.object({
   personId: z.string(),
-  imageUrl: z.string().regex(/^\/portraits\/[a-f0-9]{12}\.webp$/),
+  imageUrl: z
+    .string()
+    .regex(/^\/portraits\/(?:[a-f0-9]{12}|[a-f0-9]{24})\.webp$/),
   name: z.string().min(1),
   acceptedAnswers: z.array(z.string()).min(1),
   hint: z.string(),
 });
 export const dailySchema = z.object({
   day: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
-  category: z.enum(["actors", "world-leaders", "politicians", "ceos-founders"]),
+  category: z.enum([...categorySlugs, "politicians"]),
   rounds: z.array(roundSchema).length(5),
 });
 const resultSchema = z.object({
@@ -72,4 +75,4 @@ export type Round = Daily["rounds"][number];
 export type RoundResult = z.infer<typeof resultSchema>;
 export type Attempt = z.infer<typeof attemptSchema>;
 export type ScoreRecord = z.infer<typeof recordSchema>;
-export type Category = { slug: string; label: string };
+export type Category = { slug: string; label: string; available?: boolean };

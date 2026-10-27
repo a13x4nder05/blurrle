@@ -1,0 +1,45 @@
+{
+  "Emelia Clarke": { "name": "Emilia Clarke", "aliases": [] },
+  "Kitt Haring": { "name": "Kit Harington", "aliases": [] },
+  "Victory Beckham": { "name": "Victoria Beckham", "aliases": [] },
+  "DJ Kahled": { "name": "DJ Khaled", "aliases": [] },
+  "Monica Belucci": { "name": "Monica Bellucci", "aliases": [] },
+  "Briget Maasland": { "name": "Bridget Maasland", "aliases": [] },
+  "Carlo Bozhardt": { "name": "Carlo Boszhard", "aliases": [] },
+  "Silvie Meis": { "name": "Sylvie Meis", "aliases": [] },
+  "Froukje Both": { "name": "Froukje de Both", "aliases": [] },
+  "Thijs Romer": { "name": "Thijs Römer", "aliases": [] },
+  "Renee Zellweger": { "name": "Renée Zellweger", "aliases": [] },
+  "Andre van Duin": { "name": "André van Duin", "aliases": [] },
+  "Andre Hazes": { "name": "André Hazes", "aliases": [] },
+  "Rene Froger": { "name": "René Froger", "aliases": [] },
+  "Beyonce": { "name": "Beyoncé", "aliases": [] },
+  "Lee towers": { "name": "Lee Towers", "aliases": [] },
+  "Willem Alexander": {
+    "name": "Willem-Alexander",
+    "aliases": ["King Willem-Alexander"]
+  },
+  "YesR": { "name": "Yes-R", "aliases": ["Yes R"] },
+  "J.F. Kennedy": {
+    "name": "John F. Kennedy",
+    "aliases": ["JFK", "John Kennedy"]
+  },
+  "Queen Elizabeth": {
+    "name": "Elizabeth II",
+    "aliases": ["Queen Elizabeth II", "Queen Elizabeth"]
+  },
+  "Prins Charles": {
+    "name": "Charles III",
+    "aliases": ["Prince Charles", "King Charles", "King Charles III"]
+  },
+  "Prins Harry": { "name": "Prince Harry", "aliases": ["Harry"] },
+  "Prins William": { "name": "Prince William", "aliases": ["William"] },
+  "Princess Amalia": {
+    "name": "Catharina-Amalia",
+    "aliases": ["Princess Amalia", "Amalia"]
+  },
+  "Princess Beatrix": {
+    "name": "Beatrix",
+    "aliases": ["Princess Beatrix", "Queen Beatrix"]
+  }
+}

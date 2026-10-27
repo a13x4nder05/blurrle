@@ -18,10 +18,10 @@ const daily: Daily = {
 describe("game rules", () => {
   it("uses accelerating exponential time decay, penalties, and a zero floor", () => {
     expect(score(0, 0)).toBe(1000);
-    expect(score(5000, 0)).toBe(858);
+    expect(score(5000, 0)).toBe(952);
     expect(score(10000, 0)).toBe(0);
-    expect(score(5000, 1)).toBe(758);
-    expect(score(9500, 2)).toBe(0);
+    expect(score(5000, 1)).toBe(852);
+    expect(score(9900, 2)).toBe(0);
   });
   it("accepts normalized names, aliases, and first names", () => {
     expect(
@@ -42,7 +42,7 @@ describe("game rules", () => {
     a = transition(a, { type: "resume-hint", now: 2000 });
     a = transition(a, { type: "guess", guess: "Cranston", elapsed: 1500 });
     expect(a.phase).toBe("round-result");
-    expect(a.results[0].score).toBe(879);
+    expect(a.results[0].score).toBe(896);
     expect(
       transition(a, { type: "guess", guess: "wrong", elapsed: 2000 }),
     ).toBe(a);

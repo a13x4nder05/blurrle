@@ -8,21 +8,22 @@
   },
   "scripts": {
     "dev": "concurrently -k -n api,web \"node --env-file-if-exists=.env --import tsx --watch server/index.ts\" \"vite --host 127.0.0.1\"",
-    "db:migrate": "node --env-file-if-exists=.env --import tsx scripts/migrate.ts",
-    "db:seed": "node --env-file-if-exists=.env --import tsx scripts/seed.ts",
-    "assets:fetch": "node --env-file-if-exists=.env --import tsx scripts/download-images.ts",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "test": "vitest run",
     "test:e2e": "playwright test",
     "build": "npm run typecheck && vite build && tsc -p tsconfig.server.json",
     "start": "node --env-file-if-exists=.env dist/server/index.js",
-    "format": "prettier --write src server scripts tests *.ts *.json eslint.config.js index.html"
+    "format": "prettier --write src server scripts tests *.ts *.json eslint.config.js index.html",
+    "catalog:import": "node --env-file-if-exists=.env --import tsx scripts/import-portraits.ts",
+    "catalog:categories": "node --env-file-if-exists=.env --import tsx scripts/sync-catalog-categories.ts",
+    "catalog:curate": "node --env-file-if-exists=.env --import tsx scripts/seed-cloud-game.ts",
+    "catalog:daily": "node --env-file-if-exists=.env --import tsx scripts/generate-daily.ts",
+    "catalog:review": "node --env-file-if-exists=.env --import tsx scripts/review-catalog.ts"
   },
   "dependencies": {
     "@fontsource-variable/dm-sans": "^5.3.0",
     "@fontsource-variable/manrope": "^5.3.0",
-    "better-sqlite3": "^12.0.0",
     "express": "^5.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -31,14 +32,15 @@
   "devDependencies": {
     "@eslint/js": "^10.0.0",
     "@playwright/test": "1.58.2",
-    "@types/better-sqlite3": "^7.6.0",
     "@types/express": "^5.0.0",
     "@types/node": "^24.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "@types/supertest": "^6.0.0",
+    "@types/yauzl": "^3.4.0",
     "@vitejs/plugin-react": "^6.1.2",
     "concurrently": "^9.0.0",
+    "csv-parse": "^7.0.3",
     "eslint": "^10.0.0",
     "eslint-plugin-react-hooks": "^7.0.0",
     "prettier": "^3.9.10",
@@ -48,10 +50,10 @@
     "typescript": "^5.9.0",
     "typescript-eslint": "^8.0.0",
     "vite": "^8.3.5",
-    "vitest": "^5.0.5"
+    "vitest": "^5.0.5",
+    "yauzl": "^3.4.0"
   },
   "allowScripts": {
-    "better-sqlite3": true,
     "esbuild": true
   }
 }

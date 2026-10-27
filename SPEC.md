@@ -25,9 +25,12 @@ Accept normalized full names and explicit aliases, plus first names and surnames
 - The landing page provides a simple category dropdown with these initial options:
   - Actors
   - World leaders
-  - Politicians
-  - CEOs / founders
-- Each category has its own daily set of five images and its own recorded score.
+  - CEOs & Founders
+  - Musicians
+  - Athletes
+  - TV & Reality
+  - Other
+- Each playable category has its own daily set of five images and its own recorded score. New categories without five reviewed, usable portraits are disabled and labeled Coming soon. Writers belong under Other, not a separate category. Politicians is removed from the picker; retain historical attempts, scores, and daily selections.
 - All players choosing the same category on the same day receive the same five images in the same order.
 - The selected category stays fixed for all five rounds. Players can choose another category on the landing page.
 
@@ -54,13 +57,13 @@ Accept normalized full names and explicit aliases, plus first names and surnames
 ### Scoring and hints
 
 - Each round starts with 1,000 available points.
-- Available points follow an accelerating exponential loss curve: decrease slowly at first, noticeably faster by halfway, and reach zero after 10 seconds. Before wrong-guess penalties, about 958 points remain at 2.5 seconds, 858 at 5 seconds, and 610 at 7.5 seconds.
+- Available points follow an accelerating exponential loss curve: decrease slowly at first, noticeably faster by halfway, and reach zero after 10 seconds. Before wrong-guess penalties, about 991 points remain at 2.5 seconds, 952 at 5 seconds, and 778 at 7.5 seconds.
 - Each wrong guess subtracts another 100 points from the points available for that round.
 - Each five-round game offers one free hint, usable on a single face, such as "The actor who played Walter White."
 - Request the hint using Shift+Enter or a visible hint button that also works on mobile. Escape skips an active face. When the hint card is open, Escape dismisses the card without skipping.
 - Revealing the hint has no point penalty and pauses the timer, score decay, and progressive unblurring. Show a prominent, larger hint in an animated card matching the charcoal/coral theme, titled “Here’s your clue.” Omit the star, pause label, and text below the button. Highlight Continue guessing with a visible Enter key badge matching the Next action. Continue guessing, a fresh Enter press, or Escape closes the card and resumes with the same remaining play time. Refreshing while reading the hint restores the paused card.
 - After using the hint, mark it used and disable it for the rest of the five-round game, including after refresh or resume. A replay is a new game with its own hint.
-- For a correct guess, calculate the score at submission as `max(0, floor(1000 × (1 - (exp(3.6 × elapsedSeconds / 10) - 1) / (exp(3.6) - 1))) - 100 × wrongGuesses)`.
+- For a correct guess, calculate the score at submission as `max(0, floor(1000 × (1 - (exp(6 × elapsedSeconds / 10) - 1) / (exp(6) - 1))) - 100 × wrongGuesses)`.
 - Scores never go below zero. The final score is the sum of the five round scores, with a maximum of 5,000 points.
 
 ### Final score
@@ -73,7 +76,7 @@ Accept normalized full names and explicit aliases, plus first names and surnames
 
 - Keep all views minimal and focused. Use a dark charcoal background, warm coral accents, and cream text; remove the former lime theme.
 - On the landing page, retain the large wordmark with “blurr” blurred and “le” clear. Use the single-line tagline “Famous faces. Beat the blur.” Keep category selection, play/resume/replay, score status, and a dimmed Photo credits control at bottom left. Omit decorative header badges, extra slogans, and footer bars.
-- Use a shared animated portrait mosaic behind the landing and results views. Stack curated portraits in film-style columns with distinct varied rotations and overlapping edges. Alternate upward and downward scrolling by column, keeping all pictures in a column moving together in a seamless loop. Use fourteen overlapping film columns on desktop and eight on mobile, with individual angles from −21° to +19°, staggered heights, and varied overlap order, with tall repeating sequences and overscan to keep portraits covering the screen edge to edge throughout the animation. Overlay the interface with enough shading for readable controls.
+- Use a shared animated portrait mosaic behind the landing and results views. Stack curated portraits in film-style columns with distinct varied rotations and overlapping edges. Alternate upward and downward scrolling by column, keeping all pictures in a column moving together in a seamless loop. Use 26 overlapping angled film columns on desktop and 16 on mobile, backed by another 12 scrolling strips on desktop and 8 on mobile. The unrotated back layer fills the spaces between tilted strips, with individual angles from −21° to +19°, staggered heights, and varied overlap order, with tall repeating sequences and overscan to keep portraits covering the screen edge to edge throughout the animation. Overlay the interface with enough shading for readable controls.
 - During play, use a small wordmark matching the landing logo at top left (blurred “blurr”, clear “le”, coral period) and a larger category label. Place the points counter centered above the input, with the timer bar attached below the input. Remove the numeric seconds counter; the timer bar shows remaining time. Put clearly styled Skip and Hint buttons together on the right below the input. Do not wrap the controls in a white card or add explanatory text around them.
 - Wrong guesses briefly shake and flash the input and its text red, and pop a visible red “−100” above the points counter before quickly fading it away. Preserve the wrong guess selected for easy correction.
 - Results show the five portraits, per-face scores, total, replay status, and a return button over the shared mosaic. Omit corner badges, extra slogans, and footer bars.
@@ -83,10 +86,32 @@ Accept normalized full names and explicit aliases, plus first names and surnames
 
 ## Images
 
-- For the first iteration, use a simple SQLite database containing image references and information about each person.
+- Use Supabase PostgreSQL for the live catalog and daily selections, and private Supabase Storage for approved portrait files. Supabase is required; there is no local database or offline catalog fallback.
 - Images are sourced from an online API or database.
 - Store each person's name, accepted answers, category memberships, and hint alongside the image reference.
 - Store each category's daily image selection and order so every player receives the same game for that category and day.
+
+## Cloud portrait catalog and import pipeline
+
+The owner has authorized building a Supabase catalog and importing portraits into their project. Store person labels and portrait metadata in Supabase PostgreSQL tables, and actual image files in Supabase Storage. The game now reads its daily selections from Supabase using required server credentials. There is no alternate content backend.
+
+- Use separate `people`, `portraits`, `categories`, `person_categories`, and `daily_images` tables. Keep a stable person ID independent of photo filenames, and allow multiple portraits per person.
+- Import known-source datasets with a reproducible, resumable script. Pin the source version and archive checksum; read the actual label format, validate images, convert to WebP, detect duplicate image bytes, and use opaque Storage keys. Re-running must not duplicate records or overwrite corrections, approvals, hints, or daily selections.
+- The first supported source is the owner's selected Kaggle dataset, `souvenger/celebrity-faces-dataset`, version 1. Its inspected archive contains 157 photos and 156 labeled rows in `Labels.csv`; the unlabeled photo is skipped. This is a small starting catalog, not the much larger Wikifaces collection.
+- Preserve raw source labels and dataset-level licensing separately from verified per-image source, license, and attribution. Import all candidates as pending into a private `portrait-imports` bucket. Missing categories, hints, uncertain identities, misspelled labels, and image rights are review work; successful ingestion is not approval for gameplay.
+- Reuse the existing curated seed's person IDs, aliases, hints, and memberships when names match. Do not automatically classify every celebrity as an actor. Unclassified people may be stored pending later curation.
+- Keep Supabase keys server-side in ignored local configuration. Catalog tables use row-level security with no anonymous access; only the server import role can call the transactional import function.
+- The daily-game API reads Supabase `daily_images` in saved position order. Images use stable opaque `/portraits/<24-hex-id>.webp` URLs: the backend verifies approval, downloads from private Storage using its server key, and serves WebP bytes. Client progress never depends on an expiring signed URL. Gameplay uses only approved cloud portraits. Keep the secret key and upload/admin access off the client.
+- The film-roll background samples randomly from the full portrait catalog, including pending dataset imports, rather than only the reviewed gameplay pool. `/api/backgrounds` samples up to 64 images from all paginated portrait rows; a separate opaque `/backgrounds/<id>.webp` route serves them from private Storage. Only explicitly rejected people/photos are excluded. Resample on each landing/results mount; the daily game selection stays unchanged. Credits distinguish verified individual image licenses from dataset-level claims for imported backgrounds.
+- Wikifaces remains a possible future source. Its downloadable archive, actual schema, and reuse terms must be verified before claiming that an importer supports it.
+
+## Daily selection and cloud serving
+
+- Supabase Cron runs `generate_blurrle_daily` at **00:00 UTC** using the `blurrle-daily-selection` job. The game API can call the same function on demand if a set is missing after a delayed job or paused project.
+- Select five distinct people at random per ready category, using approved profiles with useful hints and approved portraits that exist in Storage. A portrait qualifies through individual source/license metadata or explicit owner approval for gameplay; unknown individual image rights remain marked as unknown, with dataset claims displayed separately. Save the random order once in `daily_images`. A transaction-level advisory lock protects concurrent calls; reruns preserve existing complete sets. Insufficient categories remain unavailable, and partial existing sets require explicit repair rather than silent replacement.
+- `npm run catalog:daily` calls the same function manually. `--day YYYY-MM-DD` selects an explicit UTC date. No always-running laptop or GitHub workflow is required for the Supabase Cron job.
+- The starter Actors set contains Leonardo DiCaprio, Keanu Reeves, Aaron Paul, Emma Watson, and Bryan Cranston in shuffled order. The initial reviewed pool contained the original 15 Commons portraits plus Aaron Paul, whose identifying name placard was cropped out. Their individual image credits and licenses are saved in Supabase. The owner has since reviewed the full catalog and authorized gameplay approval for all 166 current people and 172 portraits. Each person has a short hint; imported source labels remain recorded, with clear spelling corrections kept as accepted aliases. Future imports remain pending until separately reviewed.
+- Preserve browser-local completed scores and existing attempt snapshots during the switch. Older saved attempts retain their pinned questions and scores; legacy person-based portrait URLs resolve to approved Supabase portraits. If Supabase fails, show a recoverable error.
 
 ## Long-term goals
 
