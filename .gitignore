@@ -1,0 +1,11 @@
+node_modules/
+dist/
+var/
+data/images/*
+!data/images/.gitkeep
+.env
+.env.*
+!.env.example
+playwright-report/
+test-results/
+*.tsbuildinfo

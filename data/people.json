@@ -1,0 +1,297 @@
+[
+  {
+    "id": "1a161cbc4905",
+    "name": "Bryan Cranston",
+    "aliases": [
+      "Cranston"
+    ],
+    "categories": [
+      "actors"
+    ],
+    "hint": "He played Walter White in Breaking Bad.",
+    "imagePath": "1a161cbc4905.webp",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:BryanCranston-byPhilipRomano_(cropped).jpg",
+    "sourceAssetUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/BryanCranston-byPhilipRomano_%28cropped%29.jpg/1280px-BryanCranston-byPhilipRomano_%28cropped%29.jpg",
+    "originalAssetUrl": "https://upload.wikimedia.org/wikipedia/commons/9/95/BryanCranston-byPhilipRomano_%28cropped%29.jpg",
+    "creator": "PhilipRomano",
+    "licenseName": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution": "PhilipRomano"
+  },
+  {
+    "id": "1b0c7c0c180a",
+    "name": "Viola Davis",
+    "aliases": [
+      "Davis"
+    ],
+    "categories": [
+      "actors"
+    ],
+    "hint": "She played Annalise Keating in How to Get Away with Murder.",
+    "imagePath": "1b0c7c0c180a.webp",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Viola_Davis_2026_(cropped).jpg",
+    "sourceAssetUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Viola_Davis_2026_%28cropped%29.jpg/1280px-Viola_Davis_2026_%28cropped%29.jpg",
+    "originalAssetUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/Viola_Davis_2026_%28cropped%29.jpg",
+    "creator": "Maryland GovPics",
+    "licenseName": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "attribution": "Maryland GovPics"
+  },
+  {
+    "id": "c2f2124fdeab",
+    "name": "Leonardo DiCaprio",
+    "aliases": [
+      "DiCaprio",
+      "Leo DiCaprio"
+    ],
+    "categories": [
+      "actors"
+    ],
+    "hint": "He played Jack in Titanic and Cobb in Inception.",
+    "imagePath": "c2f2124fdeab.webp",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:LeoPTABFI191125-28_(cropped).jpg",
+    "sourceAssetUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2d/LeoPTABFI191125-28_%28cropped%29.jpg",
+    "originalAssetUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2d/LeoPTABFI191125-28_%28cropped%29.jpg",
+    "creator": "Raph_PH",
+    "licenseName": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "attribution": "Raph_PH"
+  },
+  {
+    "id": "796d63d21697",
+    "name": "Keanu Reeves",
+    "aliases": [
+      "Reeves"
+    ],
+    "categories": [
+      "actors"
+    ],
+    "hint": "He plays Neo in The Matrix and the title character in John Wick.",
+    "imagePath": "796d63d21697.webp",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Keanu_Reeves_at_TIFF_2025_02_(Cropped).jpg",
+    "sourceAssetUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Keanu_Reeves_at_TIFF_2025_02_%28Cropped%29.jpg/1280px-Keanu_Reeves_at_TIFF_2025_02_%28Cropped%29.jpg",
+    "originalAssetUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Keanu_Reeves_at_TIFF_2025_02_%28Cropped%29.jpg",
+    "creator": "Gabriel Hutchinson",
+    "licenseName": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution": "Gabriel Hutchinson / WikiPortraits"
+  },
+  {
+    "id": "8ffb4f743177",
+    "name": "Emma Watson",
+    "aliases": [
+      "Watson"
+    ],
+    "categories": [
+      "actors"
+    ],
+    "hint": "She played Hermione Granger in the Harry Potter films.",
+    "imagePath": "8ffb4f743177.webp",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Emma_Watson_2013.jpg",
+    "sourceAssetUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Emma_Watson_2013.jpg",
+    "originalAssetUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Emma_Watson_2013.jpg",
+    "creator": "Georges Biard",
+    "licenseName": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "attribution": "Georges Biard"
+  },
+  {
+    "id": "d8f758500c5d",
+    "name": "Barack Obama",
+    "aliases": [
+      "Obama"
+    ],
+    "categories": [
+      "world-leaders",
+      "politicians"
+    ],
+    "hint": "The 44th president of the United States.",
+    "imagePath": "d8f758500c5d.webp",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:President_Barack_Obama.jpg",
+    "sourceAssetUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/President_Barack_Obama.jpg/1280px-President_Barack_Obama.jpg",
+    "originalAssetUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8d/President_Barack_Obama.jpg",
+    "creator": "Official White House Photo by Pete Souza",
+    "licenseName": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+    "attribution": "Official White House Photo by Pete Souza"
+  },
+  {
+    "id": "6b655964fa53",
+    "name": "Angela Merkel",
+    "aliases": [
+      "Merkel"
+    ],
+    "categories": [
+      "world-leaders",
+      "politicians"
+    ],
+    "hint": "She served as German chancellor from 2005 to 2021.",
+    "imagePath": "6b655964fa53.webp",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Angela_Merkel_2019_cropped.jpg",
+    "sourceAssetUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Angela_Merkel_2019_cropped.jpg/1280px-Angela_Merkel_2019_cropped.jpg",
+    "originalAssetUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Angela_Merkel_2019_cropped.jpg",
+    "creator": "Raimond Spekking",
+    "licenseName": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution": "© Raimond Spekking / CC BY-SA 4.0 (via Wikimedia Commons)"
+  },
+  {
+    "id": "87e8d4d0b190",
+    "name": "Nelson Mandela",
+    "aliases": [
+      "Mandela"
+    ],
+    "categories": [
+      "world-leaders",
+      "politicians"
+    ],
+    "hint": "South Africa's first Black president and a leader against apartheid.",
+    "imagePath": "87e8d4d0b190.webp",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Nelson_Mandela_1994.jpg",
+    "sourceAssetUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Nelson_Mandela_1994.jpg/1280px-Nelson_Mandela_1994.jpg",
+    "originalAssetUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/Nelson_Mandela_1994.jpg",
+    "creator": "Kingkongphoto & www.celebrity-photos.com from Laurel",
+    "licenseName": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "attribution": "©   copyright  John Mathew Smith  2001"
+  },
+  {
+    "id": "496ea770b1fb",
+    "name": "Winston Churchill",
+    "aliases": [
+      "Churchill"
+    ],
+    "categories": [
+      "world-leaders",
+      "politicians"
+    ],
+    "hint": "He led Britain as prime minister during much of World War II.",
+    "imagePath": "496ea770b1fb.webp",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Sir_Winston_Churchill_-_19086236948_(restored).jpg",
+    "sourceAssetUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Sir_Winston_Churchill_-_19086236948_%28restored%29.jpg/1280px-Sir_Winston_Churchill_-_19086236948_%28restored%29.jpg",
+    "originalAssetUrl": "https://upload.wikimedia.org/wikipedia/commons/0/02/Sir_Winston_Churchill_-_19086236948_%28restored%29.jpg",
+    "creator": "Yousuf Karsh; Library and Archives Canada, e010751643",
+    "licenseName": "Public domain original; CC BY 2.0 digitization",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "attribution": "Yousuf Karsh / Library and Archives Canada, e010751643; digitization via BiblioArchives / LibraryArchives; restoration by Goszei"
+  },
+  {
+    "id": "31006ea31c72",
+    "name": "Jacinda Ardern",
+    "aliases": [
+      "Ardern"
+    ],
+    "categories": [
+      "world-leaders",
+      "politicians"
+    ],
+    "hint": "She was New Zealand's prime minister from 2017 to 2023.",
+    "imagePath": "31006ea31c72.webp",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:New_Zealand_Prime_Minister_Jacinda_Ardern_in_2018.jpg",
+    "sourceAssetUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/New_Zealand_Prime_Minister_Jacinda_Ardern_in_2018.jpg/1280px-New_Zealand_Prime_Minister_Jacinda_Ardern_in_2018.jpg",
+    "originalAssetUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b6/New_Zealand_Prime_Minister_Jacinda_Ardern_in_2018.jpg",
+    "creator": "Newzild",
+    "licenseName": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution": "Newzild"
+  },
+  {
+    "id": "d666ea35263e",
+    "name": "Bill Gates",
+    "aliases": [
+      "Gates",
+      "William Gates"
+    ],
+    "categories": [
+      "ceos-founders"
+    ],
+    "hint": "He co-founded Microsoft with Paul Allen.",
+    "imagePath": "d666ea35263e.webp",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Bill_Gates_at_the_European_Commission_-_P067383-987995_(cropped)_5.jpg",
+    "sourceAssetUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Bill_Gates_at_the_European_Commission_-_P067383-987995_%28cropped%29_5.jpg",
+    "originalAssetUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Bill_Gates_at_the_European_Commission_-_P067383-987995_%28cropped%29_5.jpg",
+    "creator": "Bogdan Hoyaux / European Union",
+    "licenseName": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "attribution": "© European Union, 2026"
+  },
+  {
+    "id": "5f74b84fefab",
+    "name": "Steve Jobs",
+    "aliases": [
+      "Jobs",
+      "Steven Jobs"
+    ],
+    "categories": [
+      "ceos-founders"
+    ],
+    "hint": "He co-founded Apple and introduced the iPhone.",
+    "imagePath": "5f74b84fefab.webp",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Steve_Jobs_Headshot_2010_(cropped_4).jpg",
+    "sourceAssetUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Steve_Jobs_Headshot_2010_%28cropped_4%29.jpg/1280px-Steve_Jobs_Headshot_2010_%28cropped_4%29.jpg",
+    "originalAssetUrl": "https://upload.wikimedia.org/wikipedia/commons/5/51/Steve_Jobs_Headshot_2010_%28cropped_4%29.jpg",
+    "creator": "Matthew Yohe",
+    "licenseName": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "attribution": "Matthew Yohe at en.wikipedia"
+  },
+  {
+    "id": "4a651bf208fe",
+    "name": "Oprah Winfrey",
+    "aliases": [
+      "Oprah",
+      "Winfrey"
+    ],
+    "categories": [
+      "ceos-founders"
+    ],
+    "hint": "This talk-show host founded Harpo Productions and OWN.",
+    "imagePath": "4a651bf208fe.webp",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Oprah_Winfrey_2016.jpg",
+    "sourceAssetUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Oprah_Winfrey_2016.jpg",
+    "originalAssetUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Oprah_Winfrey_2016.jpg",
+    "creator": "US Embassy  South Africa",
+    "licenseName": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+    "attribution": "US Embassy  South Africa"
+  },
+  {
+    "id": "9ae7a838f9f0",
+    "name": "Jeff Bezos",
+    "aliases": [
+      "Bezos",
+      "Jeffrey Bezos"
+    ],
+    "categories": [
+      "ceos-founders"
+    ],
+    "hint": "He founded Amazon, originally an online bookstore.",
+    "imagePath": "9ae7a838f9f0.webp",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:260202-D-PM193-2205_SECWAR_Arsenal_of_Freedom_Tour_-_Florida_(3x4_cropped_on_Bezos_and_rotated).jpg",
+    "sourceAssetUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fc/260202-D-PM193-2205_SECWAR_Arsenal_of_Freedom_Tour_-_Florida_%283x4_cropped_on_Bezos_and_rotated%29.jpg",
+    "originalAssetUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fc/260202-D-PM193-2205_SECWAR_Arsenal_of_Freedom_Tour_-_Florida_%283x4_cropped_on_Bezos_and_rotated%29.jpg",
+    "creator": "SECWAR",
+    "licenseName": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+    "attribution": "SECWAR"
+  },
+  {
+    "id": "a0dec2f1a2f4",
+    "name": "Mark Zuckerberg",
+    "aliases": [
+      "Zuckerberg"
+    ],
+    "categories": [
+      "ceos-founders"
+    ],
+    "hint": "He co-founded Facebook while studying at Harvard.",
+    "imagePath": "a0dec2f1a2f4.webp",
+    "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:P20260929DT-1655_(55561811540)_(cropped_2).jpg",
+    "sourceAssetUrl": "https://upload.wikimedia.org/wikipedia/commons/1/12/P20260929DT-1655_%2855561811540%29_%28cropped_2%29.jpg",
+    "originalAssetUrl": "https://upload.wikimedia.org/wikipedia/commons/1/12/P20260929DT-1655_%2855561811540%29_%28cropped_2%29.jpg",
+    "creator": "The White House",
+    "licenseName": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+    "attribution": "The White House"
+  }
+]
